@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InternTrack - Internship Application Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            InternTrack
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Applications</a>
+            <a href="#">Profile</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+
+            <h1>Welcome back! 👋</h1>
+
+            <p>
+                Track your internship applications and manage
+                your career journey in one place.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Applications</h3>
+                <p>24</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Assessments</h3>
+                <p>7</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Interviews</h3>
+                <p>4</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Offers</h3>
+                <p>1</p>
+            </div>
+
+        </section>
+
+
+        <!-- Application Area -->
+        <section class="application-area">
+
+
+            <!-- Add Application Form -->
+            <div class="form-card">
+
+                <h2>Add Application</h2>
+
+                <form>
+
+                    <label for="company">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="Enter company name"
+                    >
+
+
+                    <label for="role">
+                        Job Role
+                    </label>
+
+                    <input
+                        type="text"
+                        id="role"
+                        placeholder="e.g. Software Developer Intern"
+                    >
+
+
+                    <label for="application-date">
+                        Application Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="application-date"
+                    >
+
+
+                    <label for="deadline">
+                        Application Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="deadline"
+                    >
+
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <select id="status">
+
+                        <option value="saved">
+                            Saved
+                        </option>
+
+                        <option value="applied">
+                            Applied
+                        </option>
+
+                        <option value="assessment">
+                            Assessment
+                        </option>
+
+                        <option value="interview">
+                            Interview
+                        </option>
+
+                        <option value="selected">
+                            Selected
+                        </option>
+
+                        <option value="rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+
+
+                    <label for="job-link">
+                        Job Link
+                    </label>
+
+                    <input
+                        type="url"
+                        id="job-link"
+                        placeholder="https://..."
+                    >
+
+
+                    <label for="notes">
+                        Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        rows="4"
+                        placeholder="Add notes..."
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Add Application
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Applications Table -->
+            <div class="table-card">
+
+                <h2>Recent Applications</h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Company</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>ABC Technologies</td>
+                                <td>Python Intern</td>
+                                <td>
+                                    <span class="status applied">
+                                        Applied
+                                    </span>
+                                </td>
+                                <td>Sep 15, 2026</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>XYZ Labs</td>
+                                <td>Web Developer Intern</td>
+                                <td>
+                                    <span class="status assessment">
+                                        Assessment
+                                    </span>
+                                </td>
+                                <td>Sep 18, 2026</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Tech Solutions</td>
+                                <td>Software Engineer Intern</td>
+                                <td>
+                                    <span class="status interview">
+                                        Interview
+                                    </span>
+                                </td>
+                                <td>Sep 20, 2026</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>InnovateX</td>
+                                <td>Java Developer Intern</td>
+                                <td>
+                                    <span class="status saved">
+                                        Saved
+                                    </span>
+                                </td>
+                                <td>Sep 25, 2026</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
